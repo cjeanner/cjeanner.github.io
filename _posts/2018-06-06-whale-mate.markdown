@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Tmate in a Whale"
 date:   2018-06-06 10:52:12 +0200
 categories: tmate security docker

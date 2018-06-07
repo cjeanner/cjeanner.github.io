@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Get your TripleO lab"
 date:   2018-06-06 10:52:12 +0200
 categories: openstack tripleo

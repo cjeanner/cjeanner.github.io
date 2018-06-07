@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Discovering rootwrap"
 date:   2018-06-06 08:52:12 +0200
 categories: openstack tripleo security tripleoclient

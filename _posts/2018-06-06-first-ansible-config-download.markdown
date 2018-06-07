@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "First ansible in heat"
 date:   2018-06-06 08:52:12 +0200
 categories: openstack tripleo heat config-download
