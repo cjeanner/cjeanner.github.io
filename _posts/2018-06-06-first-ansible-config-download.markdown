@@ -9,7 +9,7 @@ One of my first "big" commit involved the learning of config-download
 principles, as well as some bits of Ansible.
 
 As of Queens (and even parts of Pike), TripleO deploy process wants to remove
-Puppet, prefering Ansible for the configuration deploymenent and management.
+Puppet, prefering Ansible for the configuration deployment and management.
 
 This means, a lot of things are to be moved and changed. Currently, TripleO
 calls Heat and Mistral, in order to launch processes directly from them.
