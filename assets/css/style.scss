@@ -20,3 +20,12 @@
 .shifted {
   margin-left: -130px;
 }
+
+#more-work {
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+}
