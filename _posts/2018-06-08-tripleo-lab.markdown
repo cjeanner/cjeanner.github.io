@@ -6,7 +6,7 @@ categories: openstack devstuff
 ---
 
 My [tripleo-lab](https://github.com/cjeanner/tripleo-lab)
-projec just saw some major improvements, as well as my Ansible
+project just saw some major improvements, as well as my Ansible
 skills.
 
 Its main purpose was to allow to deploy a full tripleo-based openstack, with
