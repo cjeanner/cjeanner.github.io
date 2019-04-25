@@ -40,10 +40,12 @@ You can add it wherever you want, for instance right before the
 
 Some explanations:
 
-The deploy_steps_tasks is a "new" (not THAT new though) task list running on
-the host directly. Using the ```when``` condition, you can ensure it's launched
-at the right step - for instance, since Horizon container is deployed at step 3,
-we want to ensure it's running OK at step 4.
+The ```deploy_steps_tasks``` is a "new" (not
+[THAT](https://github.com/openstack/tripleo-heat-templates/commit/0524c8635357d5617cc00d945d796d8f7d05c853)
+new though) task list running on the host directly. Using the ```when```
+condition, you can ensure it's launched at the right step - for instance, since
+Horizon container is deployed at step 3, we want to ensure it's running OK at
+step 4.
 
 We can, of course, inject some other kind of validations - for instance, we
 can call the roles provided by the ```tripleo-validations``` package, the very
