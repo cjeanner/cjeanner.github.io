@@ -28,5 +28,3 @@ show_downloads: false
 markdown: kramdown
 theme: jekyll-theme-midnight
 plugins_dir: ['jekyll-paginate']
-plugins:
-  - jekyll-asciinema

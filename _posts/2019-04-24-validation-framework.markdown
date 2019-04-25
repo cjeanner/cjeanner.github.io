@@ -53,7 +53,7 @@ for i in $(grep -l '^\s\+-\s\+prep' -r validations);
 done
 ```
 
-{% asciicast 242562 %}
+[Quick Demo](https://asciinema.org/a/242562)
 
 Running Validations through the new CLI
 ---------------------------------------
@@ -69,7 +69,7 @@ openstack tripleo validator run --validation-name validation1[,validation2,...]
 openstack tripleo validator run --group validation-group
 ```
 
-{% asciicast 242381 %}
+[Quick Demo](https://asciinema.org/a/242381)
 
 Running validations using plain Ansible (bis)
 ---------------------------------------------
@@ -131,4 +131,4 @@ instance:
 
 And Voilà. You have your validation playbook ready to fire!
 
-{% asciicast 242520 %}
+[Quick Demo](https://asciinema.org/a/242520)
