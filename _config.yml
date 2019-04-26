@@ -14,15 +14,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: The Dev side of the Stack
-email: cjeanner@redhat.com
+author:
+  email: cjeanner@redhat.com
+  twitter: SwissTengu
+  github:  cjeanner
 description: > # this means to ignore newlines until "baseurl:"
   Follow the steps of a young padawan discovering the world of TripleO and
   OpenStack. Tips, tricks, head-banging, you'll know all.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://cjeanner.github.io" # the base hostname & protocol for your site
-twitter_username: SwissTengu
-github_username:  cjeanner
 google_analytics: UA-139158528-1
+webmaster_verifications:
+    google: HFcXOGtf8rlDgpHq0Qp1vaISUWGDkpsHg63O8vY_iOg
 show_downloads: false
 
 paginate: 20
