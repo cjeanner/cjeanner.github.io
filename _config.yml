@@ -22,6 +22,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://cjeanner.github.io" # the base hostname & protocol for your site
 twitter_username: SwissTengu
 github_username:  cjeanner
+google_analytics: UA-139158528-1
 show_downloads: false
 
 paginate: 20
