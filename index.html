@@ -3,21 +3,35 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
       </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <!-- special case the second page to link back to index.html -->
+    {% if paginator.page == 2 %}
+      <a class="prev" href="/">&laquo; Prev</a>
+    {% else %}
+    <a class="prev" href="{{ paginator.next_page_path }}/page{{ paginator.previous_page }}">&laquo; Prev</a>
+    {% endif %}
+  {% else %}
+    <!-- if no 'previous' pages exit, render a span rather than an anchor -->
+    <span class="prev">&laquo; Prev</span>
+  {% endif %}
+  {% if paginator.next_page %}
+  <a class='next' href="{{ paginator.previous_page_path }}/page{{ paginator.next_page }} ">Next &raquo;</a>
+  {% else %}
+    <!-- if no 'next' pages exit, render a span rather than an anchor -->
+    <span class='next'>Next &raquo;</span>
+  {% endif %}
+</div>
+
+  <div class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></div>
 
 </div>

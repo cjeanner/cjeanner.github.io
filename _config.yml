@@ -24,7 +24,11 @@ twitter_username: SwissTengu
 github_username:  cjeanner
 show_downloads: false
 
+paginate: 20
+paginate_path: "/page:num/"
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
-plugins_dir: ['jekyll-paginate']
+plugins:
+  - 'jekyll-paginate'
