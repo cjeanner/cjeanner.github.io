@@ -26,5 +26,5 @@ show_downloads: false
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: jekyll-theme-cayman
 plugins_dir: ['jekyll-paginate']
