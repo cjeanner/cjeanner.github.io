@@ -39,7 +39,9 @@
           </a>
         </div>
       {% endif %}
-
+      <div class="center"><a title="Home" class="equalize" href="/">
+          <div><h6 class="fa fa-home"></h6></div>
+        </a></div>
       {% if page.next %}
         {% assign next = page.next %}
         <div class="right">
@@ -50,13 +52,40 @@
           </a>
         </div>
       {% endif %}
+        <div style="clear:both"></div>
       </div>
       <section>
         <h1>{{ page.title }}</h1>
-        <p><small>{{ page.date | date: "%-d %B %Y" }}, in {{ page.categories | join: ", " }}</small></p>
+        <p class="post-meta">{{ page.date | date: "%-d %B %Y" }}, in {{ page.categories | join: ", " }}</p>
         {{ content }}
       </section>
 
+      <div id="more-work">
+      {% if page.previous %}
+        {% assign previous = page.previous %}
+        <div class="left">
+          <a class="equalize" href="{{site.baseurl}}{{previous.url}}" title="Previous Post: {{previous.title}}">
+            <div>
+              <h6> ←  {{previous.title}} </h6>
+            </div>
+          </a>
+        </div>
+      {% endif %}
+      <div class="center"><a title="Home" class="equalize" href="/">
+          <div><h6 class="fa fa-home"></h6></div>
+        </a></div>
+      {% if page.next %}
+        {% assign next = page.next %}
+        <div class="right">
+          <a class="equalize" href="{{site.baseurl}}{{next.url}}" title="next Post: {{next.title}}">
+            <div>
+              <h6> {{next.title}} →</h6>
+            </div>
+          </a>
+        </div>
+      {% endif %}
+        <div style="clear:both"></div>
+      </div>
     </section>
 
   </body>

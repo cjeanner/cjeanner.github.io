@@ -24,9 +24,17 @@
   margin-bottom: 20px;
   .left {
     float: left;
+    width:49%;
+  }
+  .center {
+    float: left;
+    width:2%;
+    text-align:center;
   }
   .right {
     float: right;
+    width:49%;
+    text-align:right;
   }
 }
 .pagination {
