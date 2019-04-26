@@ -46,6 +46,7 @@ Save the edited file, and... Well. That's it. You have just added a simple
 validation that will ensure the container image registry is working as expected!
 
 And, after so many words, here's the
-[promised cast](https://asciinema.org/a/Mhqr5Agn5tsbRXhh6XehLzpk9)!
+[promised cast](https://asciinema.org/a/242942)!
+[![asciicast](https://asciinema.org/a/242942.png)](https://asciinema.org/a/242942)
 
 Do you validate this feature/content? ;)
