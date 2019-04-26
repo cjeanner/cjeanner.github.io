@@ -20,7 +20,7 @@
   margin-left: -130px;
 }
 
-#more-work {
+.more-work {
   margin-bottom: 20px;
   .left {
     float: left;
@@ -36,10 +36,13 @@
     width:49%;
     text-align:right;
   }
+  .equal {
+    width: 33.333%;
+  }
 }
-.pagination {
+.paginate {
   display: block;
-  font-size: 0.5em;
+  padding-bottom: 20px;
 }
 .prev {
   float:left;
@@ -47,16 +50,14 @@
 .next {
   float: right;
 }
-.rss-subscribe {
-  display: block;
-  clear:both;
-  text-align: center;
-  font-size: 0.5em;
-}
 .site-footer {
   font-size: 0.5em;
   padding-left: 130px;
 }
 .post-meta {
   font-size:0.7em;
+}
+
+.fixed {
+  position: fixed;
 }
