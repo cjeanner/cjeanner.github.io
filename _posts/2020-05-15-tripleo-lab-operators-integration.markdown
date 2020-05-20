@@ -26,9 +26,9 @@ $ ansible-playbook config-host.yaml -e update_operator=true
 This will call a dedicated role within the lab that will clone the latest
 version of the operators, and run the correct command to get the collection
 installed in the right location (usually
-~/.ansible/collections/ansible_collections). Once you're launched this command,
-you can run your usual ansible-playbook command, with your custom env and so
-on.
+```~/.ansible/collections/ansible_collections```). Once you're launched this
+command, you can run your usual ansible-playbook command, with your custom env
+and so on.
 
 Also, please ensure you run it on a regular base, or set the
 ```update_operator``` to ```true``` in your env file - they actually do change
@@ -42,8 +42,8 @@ things are properly deprecated, and a new role has been created in order to
 fail the run early, showing what replaces the deprecated variable (or, well,
 some were just dropped since they were useless).
 
-This last feature ensure your env is sane, and doesn't have any ambiguity
-regarding what you're deploying.
+This last feature ensures your environment is sane, and doesn't have any
+ambiguity regarding what you're deploying.
 
 There are also some new things regarding the proxy support: since the
 ```no_proxy``` variable is a bit messy (and I'm still polite here), the proxy
@@ -52,11 +52,13 @@ issues while fetching container images, or other network resources. Fun fact to
 know, there is absolutely NO RFC describing how an application should handle
 any proxy related variables. To make things even funnier, some applications
 seem to support the CIDR notation for no_proxy, while neither curl nor wget
-appear to support it... This, of course, leads to some really fun confusion,
-especially when podman containers, by default, import the proxy configuration.
+appear to support it (their manpage talks about domains, no IP)... Not to
+mention the length limit of the variable value. This, of course, leads to some
+really fun confusion, especially when podman containers, by default, import the
+proxy configuration.
 
 Finally... CentOS-8 being out and stable enough, tripleo-lab supports it. Your
-builder can be on CentOS-8, as well as the VM. Note that you'll need to pass
+builder can be on CentOS-8, as well as the VMs. Note that you'll need to pass
 a specific environment file for CentOS-8 based VMs:
 ```environments/vm-centos8.yaml```. This will ensure you get the right setup,
 with the right size and so on.
