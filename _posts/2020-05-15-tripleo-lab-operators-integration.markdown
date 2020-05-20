@@ -26,7 +26,7 @@ $ ansible-playbook config-host.yaml -e update_operator=true
 This will call a dedicated role within the lab that will clone the latest
 version of the operators, and run the correct command to get the collection
 installed in the right location (usually
-```~/.ansible/collections/ansible_collections```). Once you're launched this
+```~/.ansible/collections/ansible_collections```). Once you've launched this
 command, you can run your usual ansible-playbook command, with your custom env
 and so on.
 
@@ -38,9 +38,11 @@ since github might have some hickups.
 
 Since the operators provides a lot of new parameters, and some where duplicated
 within the lab, a deep scrub was done in the lab parameters. All the dropped
-things are properly deprecated, and a new role has been created in order to
-fail the run early, showing what replaces the deprecated variable (or, well,
-some were just dropped since they were useless).
+things are
+[properly deprecated](https://github.com/cjeanner/tripleo-lab/tree/master/roles/deprecations/tasks),
+and a new role has been created in order to fail the run early, showing what
+replaces the deprecated variable (or, well, some were just dropped since they
+were useless).
 
 This last feature ensures your environment is sane, and doesn't have any
 ambiguity regarding what you're deploying.
